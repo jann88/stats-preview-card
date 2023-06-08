@@ -28,6 +28,7 @@ body {
     font-size: 15px;
     font-family: 'Inter', 'Lexend-Deca';
     font-weight: normal ;
+    background-color: var(--Very-dark-blue);
 }
 img, svg {
     display: block;
@@ -47,7 +48,7 @@ img, svg {
     place-content: center;
     grid-template-columns: 1fr 1fr;
     background-color: var(--Dark-desaturated-blue);
-    border-radius: .5em .5em;
+    /* border-radius: 1em 1em; */
 }
 .left-side {
     display: flex;
@@ -107,3 +108,69 @@ img, svg {
     /* background-color: hsla(277, 64%, 61%, 0.6); */
 }
 
+@media (max-width: 425px){
+    body {
+        font-size: 12px;
+    }
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em 1em;
+    overflow: hidden;
+    margin: 8rem 2rem;
+    border-radius: 1rem 1rem;
+}
+.left-side {
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    font-size: .5rem;
+    text-align: center;
+    margin: 0 0 0 0;
+    /* margin-top: 1rem; */
+}
+.left-side .description{
+    margin-bottom: 1.5rem;
+}
+.left-stats{
+    flex-direction: column;
+}
+.left-stats h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.left-stats span {
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;  
+    margin-top: 0.5em;
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+}
+
+@media (min-width: 1440px) {
+    body {
+        font-size: 20px;
+    }
+    .left-side {
+        margin-inline: 3rem;
+        padding: 5rem 5rem;
+    }
+.title {
+    font-size: 32px;
+}
+.description {
+    font-size: 20px;
+}
+.left-stats {
+font-size: 25px;
+}
+.left-stats span {
+    font-size: 12px;
+}
+}
