@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Inter', 'Lexend Deca' ;
+    font-display: swap;
+    font-weight: 100 700;
+    src: url('https: //fonts.google.com/specimen/Inter'),('https: //fonts.google.com/specimen/Lexend+Deca');
+}
+:root {
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue : hsl(244, 38%, 16%);
+    --Soft-violet : hsl(277, 64%, 61%);
+
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white1 : hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white : hsla(0, 0%, 100%, 0.6);
+
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+body {
+    font-size: 15px;
+    font-family: 'Inter', 'Lexend-Deca';
+    font-weight: normal ;
+}
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+.container {
+    background-color: var(--Very-dark-blue);
+    min-height: 100vh;
+    /* max-width: 1000px; */
+    display: grid;
+    place-content: center;
+    padding: 5rem 5rem;
+
+
+}
+.card{
+    background-color: var(--Dark-desaturated-blue);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    border-radius: .2em .2em;
+    width: 800px;
+    
+}
+.left-side {
+    display: grid;
+    place-content: center;
+    align-items: start;
+    color: var(--White);
+    padding: 1em 1em;
+}
+.left-info {
+    display: grid;
+    align-items: start;
+}
+.left-info h1 {
+    font-weight: 600;
+    font-size: 2rem ;
+    margin-bottom: 1rem;
+}
+.left-info h1 span {
+    color: var(--Soft-violet);
+}
+.left-info p {
+    color: var(--Slightly-transparent-white);
+    margin-bottom: 4rem;
+}
+
+.left-stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+.left-stats h2 {
+    font-weight: 600;
+}
+.left-stats span {
+    color: var(--Slightly-transparent-white);
+    font-weight: normal;
+}
